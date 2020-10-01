@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+	<update>
+		<name>Videos OR Template Module</name>
+		<description>Módulo para integrar en el template de Open ROOM vídeos</description>
+		<element>mod_orvideo</element>
+		<type>module</type>
+		<version>1.3.1</version>
+		<client>0</client>
+		<downloads>
+			<downloadurl type="full" format="zip">https://webprojects.open-room.com/updates/mod_orvideo/mod_orvideo_1-3-1.zip</downloadurl>
+		</downloads>
+		<maintainer>Open ROOM</maintainer>
+		<maintainerurl>https://www.open-room.com/</maintainerurl>
+    <tags>
+      <tag>stable</tag>
+    </tags>
+    <section>Updates</section>
+		<targetplatform name="joomla" version="3.[23456789]" />
+		<php_minimum>7.1</php_minimum>
+	</update>
+</updates>
