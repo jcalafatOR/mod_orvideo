@@ -10,7 +10,7 @@
 defined('_JEXEC') or die;
 $orVideo_params = $params->get('loop') == 1 ? 'loop ' : '';
 $orVideo_params .= $params->get('autoplay') == 1 ? 'autoplay ' : '';
-$orVideo_params .= $params->get('navigation') == 1 ? 'controls="true" ' : '';
+$orVideo_params .= $params->get('navigation') == 1 ? 'controls ' : '';
 $orVideoPopUp_files = 'rel-mp4="'.JURI::root(true).'/'.orVideo_dirFilter($params->get('video_data_mp4')).'" ';
 $orVideoPopUp_files .= 'rel-webm="'.JURI::root(true).'/'.orVideo_dirFilter($params->get('video_data_webm')).'" ';
 $orVideoPopUp_files .= 'rel-ogg="'.JURI::root(true).'/'.orVideo_dirFilter($params->get('video_data_ogg')).'" ';
@@ -20,7 +20,7 @@ $orVideoPopUp_activador = $params->get('activador') == 1 ? "openVideoPopUp ": ""
 $orTemplate_xml = JFactory::getXML(JPATH_SITE .'/templates/openroom/templateDetails.xml');
 $orTemplate_version = orTemplate_v4video((string)$orTemplate_xml->version);
 
-
+/*
 if(!$orTemplate_version){
  ?>
  <script>
@@ -64,7 +64,7 @@ if(typeof orVideo_openPopUp === 'undefined' )
 if(typeof orVideoRemove === 'undefined' ) { function orVideoRemove(e) { be_closeCover(e); jQuery(e).remove(); } }
 jQuery(document).ready(function() { jQuery('.openVideoPopUp').on('click', function() { orVideo_openPopUp(this); }); });
  </script>
- <?php } ?>
+ <?php }*/ ?>
  
 <div class="or_video_popup <?php echo $orVideoPopUp_activador.$moduleclass_sfx; ?>" id="video_<?php echo $module->id; ?>" rel-params="<?php echo $orVideo_params; ?>" <?php echo $orVideoPopUp_files; ?> >
 
